@@ -1,0 +1,971 @@
+body {
+    margin: 0px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) );
+    height: 20vh;
+}
+
+
+#logo_wwf {
+    height: 100%;
+    margin-left: 4vw;
+    margin-right: -3vw;
+}
+
+#links a {
+    margin: 0.5vw;
+}
+
+#menu {
+    display: none;
+}
+
+span#arrow-mobile {
+    display: none;
+}
+
+#menu div {
+    width: 50px;
+    height: 5.5px;
+    margin: 5px 10px;
+    background-color: black;
+}
+
+img#sfondo-mobile {
+    display: none;
+}
+
+#dropbox {
+    position: relative;
+}
+
+#dropbox-hidden {
+    position: absolute;
+    z-index: 1; /*serve a far funzionare hover sugli ultimi due tasti altrimenti c'è un conflitto con il nav*/
+}
+
+.dropbox-items {
+    width: 11vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: #ed9c3d;
+    padding: 20px 20px 20px 30px;
+    margin-right: 4vw;
+}
+
+#dropbox-hidden .dropbox-items {
+    border-top: 2px solid rgba(245, 164, 69);
+}
+
+a.dropbox-items:hover {
+    background-color: rgba(245, 164, 69);
+    text-decoration: none;
+}
+
+header {
+    background-image: url("immagini/backgorund-image-elephant-1-1.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    font-weight: 500;
+    color: white;
+    height: 100vh;
+}
+
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#corpo_header {
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 4vw;
+    margin-top: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+    #corpo_header h1 {
+        font-size: 90px;
+        font-family: "WWF Regular","Bebas Neue", sans-serif;
+        font-weight: 100;
+        margin: -25px 0px;
+    }
+
+    #corpo_header p {
+        line-height: 1.75rem;
+        width: 37%;
+    }
+
+
+
+
+
+
+
+
+
+
+section#adotta_animale {
+    background-color: white;
+    height: 270vh;
+    margin-left: 2.6vw;
+    margin-top: 1.5vh;
+}
+
+#adotta_animale div {
+    display: inline-block;
+    width: 20.5vw;
+    height: 51vh;
+    margin: 12.6vh 1.325vw 0vh 1.325vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#adotta_animale img {
+    width: 20.5vw;
+    height: 37.7vh;
+}
+
+#adotta_animale .tasto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18.5vw;
+    color: white;
+    background-color: rgb(237, 156, 61);
+    padding: 0vh 1vw;
+    height: 7.2vh;
+    margin-left: -2px;
+}
+
+#adotta_animale a:hover {
+    background-color: rgba(237, 156, 61, 0.3);
+}
+
+#fondo {
+    background-color: white;
+    height: 30vh;
+    margin-left: 2.6vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+    #fondo span {
+        line-height: 1.75rem;
+    }
+
+    #fondo a:hover {
+        color: rgb(237, 156, 61);
+    }
+
+    #fondo a {
+        color: black;
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    height: 142vh;
+    font-size: 0px; /*annullare la distanza tra i div interni*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+div#footer_titolo {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 14px;
+}
+
+div.footer_sezione {
+    display: flex;
+}
+
+
+.footer_sezione div {
+    border: 1px solid #CECECE;
+    border-bottom: none;
+    border-left: none;
+    height: 60vh;
+    font-size: 16px;
+    vertical-align: top;
+    padding-left: 1vh;
+}
+
+footer a:hover {
+    color: rgb(237, 156, 61);
+}
+
+div#Come_usiamo_i_fondi_raccolti {
+    display: flex;
+    width: 48vw;
+    height: 53vh;
+}
+
+
+
+#Come_usiamo_i_fondi_raccolti img {
+    width: 20vw;
+    height: 44.16vh;
+    margin: 4vh 3vw 7vh 7vw;
+}
+
+#Come_usiamo_i_fondi_raccolti div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: -1vh;
+}
+
+    #Come_usiamo_i_fondi_raccolti div.righe-grafico {
+        display: flex;
+        flex-direction: row;
+        height: 4vh;
+    }
+
+#Come_usiamo_i_fondi_raccolti h2 {
+    font-size: 17px;
+    margin-top: 7vh;
+}
+
+#Come_usiamo_i_fondi_raccolti a {
+    text-decoration: underline;
+    margin-bottom: 1vh;
+}
+
+.Blocco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5vh;
+    width: 2.5vw;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+.verde {
+    background-color: rgb(192, 223, 139);
+}
+
+.arancione {
+    background-color: rgb(225, 159, 80);
+}
+
+.grigio {
+    background-color: rgb(206, 206, 206);
+}
+
+.ocra {
+    background-color: rgb(239, 203, 106);
+}
+
+
+
+
+
+
+
+div#Pagamenti_sicuri {
+    width: 24vw;
+    height: 53vh;
+}
+
+#Pagamenti_sicuri h2 {
+    margin: 3vh 0vw;
+}
+
+#Pagamenti_sicuri p {
+    line-height: 1.75rem;
+    font-size: 14px;
+    width: 85%;
+}
+
+div#loghi {
+    height: 0vh;
+    width: 100%;
+    border: none;
+    margin-top: 3vh;
+    padding-left: 0vh;
+}
+
+
+#Pagamenti_sicuri img {
+    height: 3.5vh;
+    width: 2.5vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1vh 0.5vw 1vh 0vw;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#Detrazioni {
+    width: 25.5vw;
+    height: 53vh;
+    border-right: none;
+}
+
+#Detrazioni h2 {
+    margin: 3vh 0vw;
+}
+
+#Detrazioni div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0vh;
+    width: 25vw;
+    border: none;
+    margin-top: 6vh;
+}
+
+#Detrazioni img {
+    width: 2.2vw;
+    height: 6.5vh;
+    margin: 2vh 1vw 2vh -1vh;
+}
+
+#Detrazioni p {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#WWF_italia_ets {
+    width: 15.3vw;
+    padding-left: 4vw;
+    position: relative;
+}
+
+#WWF_italia_ets span {
+    line-height: 1.75rem;
+}
+
+#WWF_italia_ets a {
+    text-decoration: underline;
+}
+
+div.flex-mobile {
+    display: flex;
+    align-items: flex-end;
+    border: none;
+    height: 10vh;
+}
+
+.flex-mobile .tasto {
+    display: none;
+}
+
+
+
+
+
+
+div#donazioni {
+    width: 14.4vw;
+    line-height: 2.5rem;
+}
+
+div.flex-expand {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    height: 11vh;
+    padding-left: 0px;
+}
+
+.flex-expand .material-symbols-outlined {
+    display: none;
+}
+
+
+div#adozioniEiscrizioni {
+    display: flex;
+    flex-direction: column;
+    width: 14.4vw;
+    line-height: 2.5rem;
+}
+
+#adozioniEiscrizioni div {
+    border: none;
+    padding-left: 0vh;
+}
+
+#adozioniEiscrizioni .contenuto {
+    height: 4vh;
+}
+
+#iscrizioni {
+    margin-top: -10vh;
+}
+
+
+
+div .contenuto {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 0vh;
+    padding: 0px;
+}
+
+div#altri_modi_per_donare {
+    width: 14.4vw;
+    line-height: 2.5rem;
+}
+
+#altri_modi_per_donare div.flex-expand {
+    height: 16vh;
+}
+
+div#wwf_italia {
+    width: 14.4vw;
+    line-height: 2.5rem;
+}
+
+div#seguici {
+    width: 19.5vw;
+}
+
+#seguici p {
+    line-height: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 24.5vh;
+}
+
+a.tasto {
+    display: inline; /*serve per usare display:none nei media query*/
+    border: 3px solid white;
+    padding: 1.5vh 2vw;
+    line-height: 6rem;
+    font-weight: bold;
+}
+
+    a.tasto:hover {
+        background-color: white;
+        color: black;
+    }
+
+#seguici img {
+    display: inline-block; /*serve per usare display:none nei media query*/
+    width: 1.5vw;
+    height: 3vh;
+    margin: 2vh 0.5vw;
+}
+
+
+
+div#fine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    height: 13vh;
+    font-size: 16px;
+    vertical-align: top;
+    padding-left: 1vh;
+}
+
+
+/*regola prevista per elemento creato in JavaScript*/
+
+a.tasto_header {
+    font-size: 16px;
+    border: 3px solid white;
+    padding: 3vh 6vw;
+    line-height: 6rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        margin-top: -20px;
+    }
+
+    nav {
+        background: white;
+        position: fixed;
+        height: 10vh;
+        z-index: 1;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #dropbox {
+        display: none;
+    }
+
+
+
+    img#sfondo-mobile {
+        display: inline-block;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 40vh;
+    }
+
+
+    span#arrow-mobile {
+        display: inline;
+        position: absolute;
+        top: 30vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #arrow-mobile .right {
+        position: absolute;
+        left: 85vw;
+        font-size: 3rem; /* serve ad aumentare la grandezza delle frecce che sono icone */
+    }
+
+    #arrow-mobile .left {
+        position: absolute;
+        right: 85vw;
+        font-size: 3rem; /* serve ad aumentare la grandezza delle frecce che sono icone */
+    }
+
+    header {
+        background-color: #262626;
+        background-image: none;
+    }
+
+    #corpo_header {
+        position: absolute;
+        top: 50vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 14px;
+    }
+
+        #corpo_header h1 {
+            font-size: 55px;
+        }
+
+        #corpo_header p {
+            margin-top: 30px;
+            line-height: 1rem;
+            width: 90%;
+        }
+
+    #adotta_animale {
+        position: absolute;
+        top: 96vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+        #adotta_animale div {
+            width: 27.3vw;
+            height: 68vh;
+            margin: 16.8vh 1.76vw 0vh 1.76vw;
+        }
+
+        #adotta_animale img {
+            width: 27.3vw;
+            height: 50.3vh;
+        }
+
+        #adotta_animale .tasto {
+            width: 24.6vw;
+            padding: 0vh 1.3vw;
+            height: 9.6vh;
+            margin-left: -2.6px;
+        }
+
+    #fondo {
+        position: absolute;
+        top: 540vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+
+    footer {
+        position: absolute;
+        top: 580vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 355vh;
+        overflow: hidden;
+    }
+
+    div.footer_sezione {
+        flex-direction: column;
+    }
+
+
+    .footer_sezione div {
+        border-right: none; /*bordo solo superiore*/
+        height: 0vh;
+        padding-left: 1vh;
+        position: relative;
+    }
+
+    div#Come_usiamo_i_fondi_raccolti {
+        flex-direction: column;
+        height: 110vh;
+        width: 99vw;
+    }
+
+    #Come_usiamo_i_fondi_raccolti img {
+        width: 50%;
+        height: 44.16vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Come_usiamo_i_fondi_raccolti h2 {
+        font-size: 26px;
+        margin-top: 0vh;
+        margin-bottom: -3vh;
+    }
+
+    div.righe-grafico {
+        height: 6vh;
+    }
+
+    .Blocco {
+        height: 4vh;
+        width: 7vw;
+    }
+
+    div#Pagamenti_sicuri {
+        width: 99vw;
+        height: 45vh;
+    }
+
+    #Pagamenti_sicuri p {
+        width: 100%;
+    }
+
+    #Pagamenti_sicuri img {
+        height: 6vh;
+        width: 5vw;
+    }
+
+    div#Detrazioni {
+        width: 99vw;
+        height: 25vh;
+    }
+
+    #Detrazioni div {
+        width: 90vw;
+        height: 5vh;
+    }
+
+    #Detrazioni img {
+        width: 7.5vw;
+        height: 9.5vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    div#WWF_italia_ets {
+        width: 96vw;
+        height: 55vh;
+        padding-left: 4vw;
+        position: relative;
+    }
+
+        div#WWF_italia_ets h2 {
+            font-size: 19px;
+        }
+
+    #WWF_italia_ets span {
+        line-height: 1.2rem;
+    }
+
+    div.flex-mobile {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border: none;
+        height: 10vh;
+        width: 90%;
+    }
+
+    #WWF_italia_ets .flex-mobile .tasto {
+        display: inline-block;
+        padding: 0px;
+        line-height: 1rem;
+        text-decoration: none;
+        padding: 1vh;
+    }
+
+
+
+
+    .flex-expand .material-symbols-outlined {
+        display: inline;
+        font-size: 40px;
+        padding-top: 3.2vh;
+        padding-right: 1vw;
+    }
+
+
+
+
+    div.contenuto {
+        position: absolute;
+        top: 5vh;
+        margin-top: 10vh;
+        background-color: rgb(38,38,38);
+        z-index: 1;
+        padding-left: 0px;
+        margin-left: -6px;
+        height: 45vh;
+        width: 100%;
+    }
+
+    .contenuto a {
+        border-top: 1px solid #CECECE;
+    }
+
+
+    div.hidden-mobile {
+        display: none;
+    }
+
+
+    div#donazioni {
+        width: 99vw;
+        height: 15vh;
+    }
+
+
+
+    div#adozioniEiscrizioni {
+        width: 100vw;
+        height: 30vh;
+        padding-left: 0px;
+    }
+
+    #adozioniEiscrizioni div {
+        padding-left: 1vw;
+        padding-right: -5vw;
+    }
+
+        #adozioniEiscrizioni div.contenuto {
+            padding-left: 0px;
+        }
+
+    div#adozioni {
+        height: 25vh;
+    }
+
+    #adozioni div.contenuto {
+        height: 15vh;
+    }
+
+    div#iscrizioni {
+        border-top: 1px solid #CECECE;
+        height: 10vh;
+    }
+
+    #iscrizioni div.contenuto {
+        height: 20vh;
+    }
+
+
+    div#altri_modi_per_donare {
+        width: 99vw;
+        height: 15vh;
+    }
+
+    #altri_modi_per_donare div.contenuto {
+        height: 33vh;
+    }
+
+    div#wwf_italia {
+        width: 99vw;
+        height: 15vh;
+    }
+
+    #wwf_italia div.contenuto {
+        height: 20vh;
+    }
+
+
+    div#seguici {
+        width: 99vw;
+        height: 17vh;
+    }
+
+        div#seguici h2 {
+            display: none;
+        }
+
+    #seguici p {
+        line-height: 0px;
+        flex-direction: row;
+        justify-content: center;
+        height: 5vh;
+    }
+
+        #seguici p a {
+            margin-right: 1vw;
+        }
+
+    a.tasto {
+        display: none;
+    }
+
+    #seguici img {
+        display: none;
+    }
+
+    div#fine {
+        text-align: center;
+    }
+}

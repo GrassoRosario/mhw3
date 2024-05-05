@@ -1,0 +1,42 @@
+#news {
+    font-family: roboto,"Bebas Neue", sans-serif;
+}
+
+header {
+    background-image: url("immagini/wwf_hero_banner_bruxelles.jpg");
+}
+
+#news-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    #news-view .news {
+        border: 1px solid #CECECE;
+        border-bottom: none;
+        padding: 5px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #news-view img {
+        max-width: 100%;
+        margin: 15px 0px;
+    }
+
+    #news-view .source_button {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: rgb(237, 156, 61);
+        padding: 0vh 1vw;
+        height: 7.2vh;
+        margin-left: -2px;
+    }
+
+        #news-view .source_button:hover {
+            background-color: rgba(237, 156, 61, 0.3);
+        }
