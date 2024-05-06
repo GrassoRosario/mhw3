@@ -65,7 +65,7 @@ function onResponse(response) {
     return response.json();
 }
 
-const api_key = 'f08dfb8f2099db5d02e1cad89ce9bbb4';
+const api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 base_url = 'https://gnews.io/api/v4/';
 endpoint = 'search?';
