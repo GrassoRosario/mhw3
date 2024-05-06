@@ -106,8 +106,8 @@ function onError(error) {
     console.log('Error: ' + error);
 }
 
-const client_id = 'c0684c8de363368ae7180b5d699bd307';
-const client_secret = 'e4f604a32f63cccb6ce22805d0d29ccf065042c3';
+const client_id = 'xxxxxxxxxxxxxxxxxxxxxxxxxx';
+const client_secret = 'yyyyyyyyyyyyyyyyyyyyyyyy';
 
 let token;
 
